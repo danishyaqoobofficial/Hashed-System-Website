@@ -114,6 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // 
 // 
+// terms & condition
 // 
 // 
 
@@ -159,4 +160,21 @@ function portfolioDropdown() {
         value = true;
     }
     
+}
+
+
+
+// 
+// portfolio dropdown
+// 
+
+
+
+
+function portfolioDropdownFun(e) {
+    let portfolioDropdownHeader = document.querySelector('.portfolio-dropdown-header');
+    let portfolioDropdownItem = e.closest('.portfolio-dropdown-item');
+
+
+    portfolioDropdownHeader.innerHTML = portfolioDropdownItem.innerHTML;
 }
