@@ -162,25 +162,29 @@
                         Get Quotes</div>
                 </div>
             </div>
-            <div class="block lg:hidden "><span class="flex items-center justify-center px-[6px] cursor-pointer "><svg
+            <div class="block lg:hidden " onclick="hamburger()" >
+                <span class="flex items-center justify-center px-[6px] cursor-pointer "><svg
                         class="h-[22px] w-[22px] sm:h-[28px] sm:w-[28px] " viewBox="0 0 24 25" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <rect y="0.927734" width="24" height="2.66667" rx="1.33333" fill="#0D99FF"></rect>
                         <rect y="11.5938" width="24" height="2.66667" rx="1.33333" fill="#0D99FF"></rect>
                         <rect y="22.2617" width="24" height="2.66667" rx="1.33333" fill="#0D99FF"></rect>
-                    </svg></span>
-                </div>
+                    </svg>
+                </span>
+            </div>
         </div>
-        <div class="bg-[#fff] w-[220px] fixed  top-0 pb-[22px] h-[100%] transition-all z-50 -right-full ">
+        <div class="bg-[#fff] w-[220px] fixed top-0 pb-[22px] h-[100%] transition-all z-50 -right-full hamburger-main ">
             <div class="flex items-center gap-[28px] lg:gap-[44px] flex-col justify-center h-full ">
-                <div class=" w-full flex items-center justify-end p-[14px] absolute top-10 right-3 "><i
-                        class="fa-solid fa-xmark text-[#0D99FF] text-[32px] cursor-pointer "></i></div><a href="/">
+                    <div class=" w-full flex items-center justify-end p-[14px] absolute top-10 right-3 " onclick="crosHambuger()" ><i
+                        class="fa-solid fa-xmark text-[#0D99FF] text-[32px] cursor-pointer "></i>
+                    </div>
+                        <a href="/">
                     <div
                         class=" capitalize text-[13px] lg:text-[14px] text-[#0D0A31] cursor-pointer font-[500] group Arimo ">
                         Home<div class="rounded-[30px] bg-[#0D99FF] h-[3px] w-[0px] group-hover:w-full transition-all ">
                         </div>
                     </div>
-                </a><a href="/about">
+                </a><a href="/about.html">
                     <div
                         class=" capitalize text-[13px] lg:text-[14px] text-[#0D0A31] cursor-pointer font-[500] group Arimo ">
                         About Us<div
@@ -188,7 +192,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="/service-details">
+                <a href="/services.html">
                     <div
                         class=" capitalize text-[13px] lg:text-[14px] text-[#0D0A31] cursor-pointer font-[500] group Arimo ">
                         Services<div
@@ -196,7 +200,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="/portfolio">
+                <a href="/portfolio.html">
                     <div
                         class=" capitalize text-[13px] lg:text-[14px] text-[#0D0A31] cursor-pointer font-[500] group Arimo ">
                         portfolio<div
@@ -204,7 +208,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="/blogs">
+                <a href="/blogs.html">
                     <div
                         class=" capitalize text-[13px] lg:text-[14px] text-[#0D0A31] cursor-pointer font-[500] group Arimo ">
                         Blogs<div

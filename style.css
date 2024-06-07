@@ -73,3 +73,8 @@
 .transition{
     transition: all 0.3s !important;
 }
+
+
+.right_position{
+    right: 0 !important;
+}
