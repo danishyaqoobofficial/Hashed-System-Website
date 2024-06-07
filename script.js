@@ -167,24 +167,29 @@ function portfolioDropdown() {
 
 // ***************   Animation Script ***************
 
-let animationItem  = document.querySelectorAll('animation__item');
-const showAnimation = ()=>{
-    let windowHeight = window.innerHeight;
 
-    animationItem.forEach((item) => {
-        let windowTop = item.getBoundingClientRect().top;
-        if (windowTop < windowHeight) {
-            item.classList.add('active__animation');
-        }
-    });
-}
-showAnimation();
-window.addEventListener('scroll', showAnimation)
+const animateOnScroll = (elementsSelector, animationClass) => {
+    const elements = document.querySelectorAll(elementsSelector);
 
+    const handleAnimation = () => {
+        const windowHeight = window.innerHeight;
+        elements.forEach(item => {
+            const windowTop = item.getBoundingClientRect().top;
+            if (windowTop < windowHeight) {
+                item.classList.add(animationClass);
+            }
+        });
+    };
 
+    // Initial animation check
+    handleAnimation();
+    // Add scroll event listener
+    window.addEventListener('scroll', handleAnimation);
+};
 
-
-
+// Define all your animations with the generic function
+animateOnScroll('.herder__img', 'landing__zoom__out');
+animateOnScroll('.header__main__heading', 'landing__slide__up');
 
 
 // 

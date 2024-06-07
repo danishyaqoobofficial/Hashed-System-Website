@@ -12,9 +12,73 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Hashed System | Home</title>
+
+    <style>
+
+.header__main__heading{
+    height: 70px;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+.herder__img{
+    transform: scale(1.25) translateX(50%) translateY(10%);
+    filter: brightness(1.3);
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+/* ***** animation for header text ******* */
+        .landing__slide__up{
+            animation: landing__slide__up 2s forwards;
+        }
+
+        @keyframes landing__slide__up {
+            0% {
+                height: 70px;
+                overflow-x: hidden;
+                padding-top: 80px;
+                opacity: 0;
+                }
+                100% {
+                height: 70px;
+                opacity: 1;
+                overflow: hidden;
+                padding-top: 0;
+            }
+        }
+        
+    /* ***** animation for header img in home page   ******* */
+        
+        .landing__zoom__out{
+            animation: landing__zoom__out 1s forwards ease-in-out;
+        }
+
+        @keyframes landing__zoom__out {
+            0% {
+                transform: scale(1.25) translateX(50%) translateY(10%);
+                filter: brightness(1.3);
+                opacity: 0;
+            }
+                
+            100% {
+                opacity: 1;
+                filter: brightness(1);
+                transform: scale(1) translateX(0%) translateY(0%);
+            }
+        }
+
+    </style>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
 
     <div class="bg-[#0D99FF] w-full flex items-center justify-center gap-[14px] py-[7px] md:py-[8px] px-[12px] ">
         <span class="flex items-center justify-center "><svg width="20" height="21" viewBox="0 0 20 21" fill="none"
@@ -230,13 +294,15 @@
             </div>
         </div>
     </header>
-    <main class="bg-[#E8F0FA] w-full ">
+    <main class="bg-[#E8F0FA] w-full">
         <section
             class="max-w-[1200px] mx-auto pt-[30px] md:pt-[60px] xl:pt-[80px] flex gap-[18px] md:gap-[22px] px-[15px] md:px-[20px] lg:flex-row flex-col ">
             <div class="flex-1 pt-[32px]  ">
-                <h2
-                    class="text-[32px] sm:text-[42px] md:text-[60px] text-[#001436] font-[600] text-start leading-[48px] md:leading-[70px] line-clamp-3 ">
-                    Software Development &amp; IT Company</h2>
+                <div class="overflow-x-hidden text-[32px] sm:text-[42px] md:text-[60px] text-[#001436] font-[600] text-start leading-[48px] md:leading-[70px] line-clamp-3 ">
+                    <h2 class="header__main__heading">Software</h2>
+                    <h2 class="header__main__heading">Development &amp;</h2>
+                    <h2 class="header__main__heading">IT Company</h2>
+                </div>
                 <p
                     class="text-[#0D99FF] text-[24px] sm:text-[28px] md:text-[32px] mt-[14px] font-[600] text-start line-clamp-1 ">
                     in Dubai - Hashed System</p>
@@ -254,7 +320,7 @@
                         </svg></div>
                 </div>
             </div>
-            <div class="flex-1 flex items-center justify-center"><img src="assets/images/hero-image.png" alt=""
+            <div class="herder__img scale-up-bottom flex-1 flex items-center justify-center"><img src="assets/images/hero-image.png" alt=""
                     class=" "></div>
         </section>
     </main>
@@ -262,7 +328,7 @@
         <div class="flex gap-[22px] lg:gap-[30px] justify-center flex-wrap ">
             <div class="px-[42px] py-[8px] border-r border-[#3e5e82] remove_border1">
                 <div class="">
-                    <h2 class="text-[28px] md:text-[34px] text-[#fff] text-center font-[300] ">30+ projects</h2>
+                    <h2 class="text-[28px] md:text-[34px] text-[#fff] text-center font-[300] landing__animation ">30+ projects</h2>
                     <p class="text-[11px] md:text-[12px] text-[#FFFFFF] text-center ">successfully delivered</p>
                 </div>
             </div>
