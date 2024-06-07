@@ -216,3 +216,17 @@ function crosHambuger() {
     let sideBar = document.querySelector('.hamburger-main');
     sideBar.classList.remove ('!right-0')
 }
+
+
+// 
+// case studies js
+// 
+
+function caseStudiesChangeImage(e) {
+    let underline = document.querySelector('.cadestudieUnderline');
+    let imageChange = document.querySelector('.changeImage');
+
+
+    underline.classList.add('!w-full');
+    imageChange.src = '/assets/images/Projects/Endup.png'
+}
