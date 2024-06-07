@@ -114,6 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // 
 // 
+// terms & condition
 // 
 // 
 
@@ -186,3 +187,32 @@ window.addEventListener('scroll', showAnimation)
 
 
 
+// 
+// portfolio dropdown
+// 
+
+
+
+
+function portfolioDropdownFun(e) {
+    let portfolioDropdownHeader = document.querySelector('.portfolio-dropdown-header');
+    let portfolioDropdownItem = e.closest('.portfolio-dropdown-item');
+
+    portfolioDropdownHeader.innerHTML = portfolioDropdownItem.innerHTML;
+}
+
+
+// 
+// hamburger
+// 
+
+
+function hamburger() {
+    let sideBar = document.querySelector('.hamburger-main');
+    sideBar.classList.add('!right-0');
+}
+
+function crosHambuger() {
+    let sideBar = document.querySelector('.hamburger-main');
+    sideBar.classList.remove ('!right-0')
+}
