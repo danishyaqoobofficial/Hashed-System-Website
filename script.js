@@ -160,3 +160,29 @@ function portfolioDropdown() {
     }
     
 }
+
+
+
+
+// ***************   Animation Script ***************
+
+let animationItem  = document.querySelectorAll('animation__item');
+const showAnimation = ()=>{
+    let windowHeight = window.innerHeight;
+
+    animationItem.forEach((item) => {
+        let windowTop = item.getBoundingClientRect().top;
+        if (windowTop < windowHeight) {
+            item.classList.add('active__animation');
+        }
+    });
+}
+showAnimation();
+window.addEventListener('scroll', showAnimation)
+
+
+
+
+
+
+
