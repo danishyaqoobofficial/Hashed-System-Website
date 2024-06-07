@@ -67,3 +67,9 @@
 .l:hover ~ .ll{
     display: block;
 }
+
+
+
+.transition{
+    transition: all 0.3s !important;
+}

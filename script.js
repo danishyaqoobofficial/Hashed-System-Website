@@ -108,3 +108,55 @@ function hideDetail(index) {
 document.addEventListener('DOMContentLoaded', () => {
     renderServices(services);
 });
+
+
+
+
+// 
+// 
+// 
+// 
+
+
+
+let value = true;
+
+
+function plus_btn(e) {
+    let singleRowMain = e.closest('.single_row_main');
+    let plusBtn = singleRowMain.querySelector('.plus_btn');
+    let singleRow = singleRowMain.querySelector('.single_row');
+    let hiddenDiv = singleRowMain.querySelector('.hidden_div');
+    
+    if (value == true) {
+        plusBtn.innerHTML = '-';
+        singleRow.classList.add('!text-[#fff]');
+        singleRow.classList.add('!bg-[#0D99FF]');
+        hiddenDiv.classList.add('!block');
+        value = false;
+    }else{
+        plusBtn.innerHTML = '+';
+        singleRow.classList.remove('!text-[#fff]');
+        singleRow.classList.remove('!bg-[#0D99FF]');
+        hiddenDiv.classList.remove('!block');
+        value = true;
+    }
+}
+
+
+function portfolioDropdown() {
+    let portfolioSvg = document.querySelector('.portfolio_dropd_svg');
+    let dropdownHiddenDiv = document.querySelector('.dropdown_hidden_div')
+
+
+    if (value == true) {
+        portfolioSvg.classList.add('!rotate-180');
+        dropdownHiddenDiv.classList.add('!block');
+        value = false;
+    }else{
+        portfolioSvg.classList.remove('!rotate-180');
+        dropdownHiddenDiv.classList.remove('!block');
+        value = true;
+    }
+    
+}
