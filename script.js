@@ -362,3 +362,16 @@ function closePopup() {
     messageContact.value = '';
     hearAbout.value = '';
 }
+
+
+function subscribeEmail() {
+    let subscribeEmail = document.getElementById('subscribeEmail');
+    let errorPeragraph = document.querySelector('.errorPeragraph');
+
+    if ( subscribeEmail.value == '' || !subscribeEmail.value.includes('@') || !subscribeEmail.value.includes('.com') ){
+        errorPeragraph.innerHTML = 'Email is required!'
+    }else{
+        errorPeragraph.innerHTML = '';
+        subscribeEmail.value = '';
+    }
+}
