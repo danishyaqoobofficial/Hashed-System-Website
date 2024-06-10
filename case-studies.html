@@ -75,7 +75,7 @@
                                             <div
                                                 class="  bg-[#fff] flex shadowHigh items-start rounded-b-[20px] p-[18px] md:p-[42px] gap-[10px] sm:flex-row flex-col-reverse ">
                                                 <div class=" flex items-center justify-center w-full sm:flex-1 mt-[22px] sm:mt-[0px] ">
-                                                    <div class="swiper">
+                                                    <div class="swiper swiper1">
                                                         <!-- Additional required wrapper -->
                                                         <div class="swiper-wrapper w-[200px] !pb-[62px] ">
                                                           <!-- Slides -->
@@ -1712,25 +1712,25 @@
 
 
 
-        // const swiper = new Swiper('.swiper', {
-        //     // Default parameters
-        //     slidesPerView: 1,
-        //     spaceBetween: 10,
-        //     pagination: {
-        //         el: '.swiper-pagination',
-        //     },
-        //     // Responsive breakpoints
-        //     breakpoints: {
-        //         // when window width is >= 320px
-        //         320: {
-        //         slidesPerView: 1,
-        //         },
-        //     },
-        //     autoplay: {
-        //         delay: 1600,
-        //         disableOnInteraction: false,
-        //     },
-        //     })
+        const swiper = new Swiper('.swiper1 ', {
+            // Default parameters
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                slidesPerView: 1,
+                },
+            },
+            autoplay: {
+                delay: 1600,
+                disableOnInteraction: false,
+            },
+            })
     </script>
 
 </body>
