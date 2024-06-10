@@ -87,3 +87,7 @@ body{
 .right_position{
     right: 0 !important;
 }
+
+.transition-five-second{
+    transition: all 0.5s ease-in-out !important;
+}
