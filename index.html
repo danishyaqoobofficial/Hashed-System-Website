@@ -2098,10 +2098,11 @@
             <div class="flex items-center gap-[12px] mt-[26px] flex-col lg:flex-row ">
                 <div class="flex items-center gap-[12px] w-full flex-col sm:flex-row ">
                     <div class="flex-1 w-full "><label class="text-[#0A0E19] text-[15px] font-[300] whitespace-nowrap "
-                            for="Your Name">Phone *</label><input
+                            for="Your Name">Your Name *</label><input
                             class="w-full border-[1px] rounded-[5px] outline-none text-[#1E2549] text-[14px] p-[11px] border-[#CECDD1] mt-[3px] "
                             type="text" placeholder="Your Name" id="Your Name"></div>
-                    <div class="flex-1 w-full "><label class="text-[#0A0E19] text-[15px] font-[300] whitespace-nowrap "
+                    <div class="flex-1 w-full ">
+                        <label class="text-[#0A0E19] text-[15px] font-[300] whitespace-nowrap "
                             for="Your Phone">Your Phone *</label><input
                             class="w-full border-[1px] rounded-[5px] outline-none text-[#1E2549] text-[14px] p-[11px] border-[#CECDD1] mt-[3px] "
                             type="text" placeholder="Your Phone" id="Your Phone"></div>
@@ -2125,7 +2126,7 @@
                         name="" id="textarea" cols="30" rows="10" placeholder="Your Message"></textarea></div>
             </div>
             <div class="flex items-center justify-center mt-[52px]  ">
-                <div class="flex items-center gap-[14px] bg-[#0D99FF] rounded-[7px] px-[22px] py-[12px] cursor-pointer">
+                <div class="flex items-center gap-[14px] bg-[#0D99FF] rounded-[7px] px-[22px] py-[12px] cursor-pointer" onclick="FormSubmit()" >
                     <p class="text-[#fff] text-[15px] font-[500] select-none ">Submit</p>
                     <div class="bg-[#fff] rounded-[50px] p-[6px] "><svg width="12" height="12" viewBox="0 0 15 14"
                             fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2134,6 +2135,18 @@
                                 fill="#3B2E71"></path>
                         </svg></div>
                 </div>
+            </div>
+        </div>
+        <div class="rounded-[10px] bg-[#11335A] max-w-[420px] w-full p-[12px] fixed -top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] z-10 popup transition-five-second top">
+            <span class="bg-[#0D99FF] rounded-[50%] ml-[6px] h-[100px] md:h-[110px] w-[100px] md:w-[110px] flex items-center justify-center absolute translate-y-[50%] -translate-x-[50%] -top-[36%] left-[50%] ">
+              <i class="fa-solid fa-check text-[50px] md:text-[70px] text-[#fff] "></i>
+            </span>
+            <div class="px-[8px] md:px-[20px] ">
+              <h2 class=" text-[24px] md:text-[32px] font-[600] text-center text-[#fff] pt-[80px] ">Thank You!</h2>
+              <p class="text-[#fff] text-center text-[13px] md:text-[15px] mt-[10px] ">Your message has been successfully submitted. Our team will contact you as soon as possible. Thanks!</p>
+            </div>
+            <div onclick="closePopup()" class=" rounded-[7px] select-none font-[600] w-full flex items-center mt-[42px] justify-center py-[9px] text-[#fff] cursor-pointer bg-[#0D99FF] ">
+              Ok
             </div>
         </div>
     </div>

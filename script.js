@@ -235,3 +235,130 @@ function caseStudiesChangeImage(e) {
     underline.classList.add('!w-full');
     imageChange.src = '/assets/images/Projects/Endup.png'
 }
+
+
+
+
+
+
+
+// 
+// Form Submition JS
+// 
+
+
+let popup = document.querySelector('.popup');
+let firstName = document.getElementById('Your Name');
+let phomneNumber = document.getElementById('Your Phone');
+let company = document.getElementById('Company');
+let email = document.getElementById('Email');
+let message = document.getElementById('textarea');
+
+function FormSubmit() {
+
+
+    if (firstName.value == '') {
+        firstName.classList.add('!border-red-400');
+    }else{
+        firstName.classList.remove('!border-red-400');
+    }
+
+    if (phomneNumber.value == '') {
+        phomneNumber.classList.add('!border-red-400');
+    }else{
+        phomneNumber.classList.remove('!border-red-400');
+    }
+    if (company.value == '' ) {
+        company.classList.add('!border-red-400');
+    }else{
+        company.classList.remove('!border-red-400');
+    }
+    if (message.value == '' ) {
+        message.classList.add('!border-red-400');
+    }else{
+        message.classList.remove('!border-red-400');
+    }
+    if (email.value == '' || !email.value.includes('@') || !email.value.includes('.com') ) {
+        email.classList.add('!border-red-400');
+    }else{
+        email.classList.remove('!border-red-400');
+    }
+
+    
+
+    if (firstName.value !== '' && phomneNumber.value !== '' && company.value !== '' && message.value !== '' && email.value !== '' && email.value.includes('@') && email.value.includes('.com') ) {
+        popup.classList.add('!top-[50%]');
+    }
+}
+
+function closePopup() {
+    popup.classList.remove('!top-[50%]');
+    firstName.value = '';
+    phomneNumber.value = '';
+    company.value = '';
+    email.value = '';
+    message.value = '';
+}
+
+
+// 
+// 
+// 
+
+
+let Name = document.getElementById('Name');
+let Mobile = document.getElementById('Mobile');
+let CompanyContact = document.getElementById('CompanyContact');
+let hearAbout = document.getElementById('hearAbout');
+let textareaContact = document.getElementById('textareaContact');
+let checkbox = document.getElementById('checkbox');
+
+
+function FormSubmitContact() {
+    if (Name.value == '') {
+        Name.classList.add('!border-red-400');
+    }else{
+        Name.classList.remove('!border-red-400');
+    }
+
+    if (Mobile.value == '') {
+        Mobile.classList.add('!border-red-400');
+    }else{
+        Mobile.classList.remove('!border-red-400');
+    }
+    if (CompanyContact.value == '' ) {
+        CompanyContact.classList.add('!border-red-400');
+    }else{
+        CompanyContact.classList.remove('!border-red-400');
+    }
+    if (textareaContact.value == '' ) {
+        textareaContact.classList.add('!border-red-400');
+    }else{
+        textareaContact.classList.remove('!border-red-400');
+    }
+    if (hearAbout.value == '') {
+        hearAbout.classList.add('!border-red-400');
+    }else{
+        hearAbout.classList.remove('!border-red-400');
+    }
+    // if (checkbox == checked) {
+    //     checkbox.classList.add('!border-red-400');
+    // }else{
+    //     checkbox.classList.remove('!border-red-400');
+    // }
+
+    
+
+    if (Name.value !== '' && Mobile.value !== '' && CompanyContact.value !== '' && textareaContact.value !== '' && hearAbout.value !== '') {
+        popup.classList.add('!top-[50%]');
+    }
+}
+
+function closePopup() {
+    popup.classList.remove('!top-[50%]');
+    Name.value = '';
+    Mobile.value = '';
+    textareaContact.value = '';
+    messageContact.value = '';
+    hearAbout.value = '';
+}
