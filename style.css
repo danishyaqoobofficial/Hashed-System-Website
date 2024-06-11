@@ -30,6 +30,9 @@ body{
     .full_width{
         width: 100% !important;
     }
+    .padding_left{
+        padding-left: 30px !important;
+    }
 }
 @media (max-width: 340px) {
     .review_card{
@@ -41,10 +44,10 @@ body{
         flex-direction: column !important;
     }
     .flex_col1 , .flex_col2 {
-        width: 100%;
+        width: 100% !important;
     }
     .padding_left{
-        padding-left: 22px;
+        padding-left: 50px;
         padding-top: 60px;
     }
 }

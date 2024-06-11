@@ -322,7 +322,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a target="_blank" href="/contact.html">
+                        <a  href="/contact.html">
                             <div
                                 class=" capitalize text-[13px] lg:text-[14px] text-[#0D0A31] cursor-pointer font-[500] group Arimo ">
                                 Contact Us<div
@@ -901,16 +901,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div
-                            class="bg-[#224871] rounded-[14px] p-[18px] sm:p-[30px] lg:p-[42px] flex items-center gap-[30px] lg:gap-[58px] mt-[32px] flex-col md:flex-row ">
-                            <div
-                                class="flex flex-1 w-full rounded-[8px] overflow-hidden flex-col sm:flex-row gap-[7px] sm:gap-[0px] ">
-                                <input
-                                    class="px-[12px] py-[12px] outline-none border-[0px] text-[14px] text-[#001436] flex-1 rounded-[8px] sm:rounded-[0px] "
-                                    type="email" name="" id="" placeholder="Email Address" required="">
-                                <div
-                                    class="bg-[#0D99FF] flex items-center justify-center px-[28px] cursor-pointer uppercase select-none text-[15px] h-[48px] text-[#fff] font-[500] rounded-[8px] sm:rounded-[0px] ">
-                                    Subcribe</div>
+                        <div class="bg-[#224871] relative rounded-[14px] p-[18px] sm:p-[30px] lg:p-[42px] flex items-center gap-[30px] lg:gap-[58px] mt-[32px] flex-col md:flex-row ">
+                            <p class="absolute top-[10px] text-[13px] text-red-600 errorPeragraph "></p>
+                            <div class="flex-1">
+                                <div class="flex flex-1 w-full rounded-[8px] overflow-hidden flex-col sm:flex-row gap-[7px] sm:gap-[0px] ">
+                                    <input class="px-[12px] py-[12px] outline-none border-[0px] text-[14px] text-[#001436] flex-1 rounded-[8px] sm:rounded-[0px] " type="email" name="" id="subscribeEmail" placeholder="Email Address" required="">
+                                    <div class="bg-[#0D99FF] flex items-center justify-center px-[28px] cursor-pointer uppercase select-none text-[15px] h-[48px] text-[#fff] font-[500] rounded-[8px] sm:rounded-[0px] " onclick="subscribeEmail()" >Subscribe</div>
+                                </div>
                             </div>
                             <div
                                 class="flex-1 w-full flex items-center gap-[26px] justify-center md:justify-end flex-wrap  ">
