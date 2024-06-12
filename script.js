@@ -39,7 +39,7 @@ function renderServices(services) {
 
     services.forEach((service, index) => {
         const serviceDiv = document.createElement('div');
-        serviceDiv.className = `service mt-[18px] w-full px-[18px] md:px-[32px] py-[9px] rounded-[20px] border-[0.7px] border-[#CECDD1] flex items-center bg-[#fff] gap-[12px] sm:gap-[18px] md:gap-[28px] overflow-auto sm:flex-row flex-col`;
+        serviceDiv.className = `service mt-[18px] w-full px-[18px] md:px-[32px] py-[9px] rounded-[20px] border-[0.7px] border-[#CECDD1] flex items-center bg-[#fff] gap-[12px] sm:gap-[18px] md:gap-[28px] overflow-auto sm:flex-row flex-col transition-all`;
         serviceDiv.id = `service-${index}`;
 
         serviceDiv.innerHTML = `
@@ -71,6 +71,7 @@ function showDetail(index) {
     // Show the detailed view
     const container = document.getElementById(`service-${index}`);
     container.style.padding = '0';
+    container.classList.add = 'transition-all';
 
     container.innerHTML = `
         <div class="bg-[#0D99FF] w-full rounded-[20px] p-[30px] flex gap-[42px] items-center flex-col-reverse sm:flex-row">
