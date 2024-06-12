@@ -237,15 +237,51 @@ function crosHambuger() {
 // case studies js
 // 
 
-function caseStudiesChangeImage(e) {
-    let underline = document.querySelector('.cadestudieUnderline');
+// function caseStudiesChangeImage(e) {
+//     let underline = document.querySelector('.cadestudieUnderline');
+//     let imageChange = document.querySelector('.changeImage');
+
+
+//     underline.classList.add('!w-full');
+//     imageChange.src = '/assets/images/Projects/Endup.png'
+// }
+
+
+
+    let underline1 = document.querySelector('.cadestudieUnderline1');
+    let underline2 = document.querySelector('.cadestudieUnderline2');
+    let underline3 = document.querySelector('.cadestudieUnderline3');
+    let underline4 = document.querySelector('.cadestudieUnderline4');
     let imageChange = document.querySelector('.changeImage');
 
-
-    underline.classList.add('!w-full');
+function caseStudiesChangeImage1() {
+    underline1.classList.add('!w-full');
+    underline2.classList.remove('!w-full');
+    underline3.classList.remove('!w-full');
+    underline4.classList.remove('!w-full');
+    imageChange.src = '/assets/images/Projects/OneMove.png'
+}
+function caseStudiesChangeImage2() {
+    underline1.classList.remove('!w-full');
+    underline2.classList.add('!w-full');
+    underline3.classList.remove('!w-full');
+    underline4.classList.remove('!w-full');
     imageChange.src = '/assets/images/Projects/Endup.png'
 }
-
+function caseStudiesChangeImage3() {
+    underline1.classList.remove('!w-full');
+    underline2.classList.remove('!w-full');
+    underline3.classList.add('!w-full');
+    underline4.classList.remove('!w-full');
+    imageChange.src = '/assets/images/Projects/N-Style.png'
+}
+function caseStudiesChangeImage4() {
+    underline1.classList.remove('!w-full');
+    underline2.classList.remove('!w-full');
+    underline3.classList.remove('!w-full');
+    underline4.classList.add('!w-full');
+    imageChange.src = '/assets/images/Projects/ConciergeBookings.png'
+}
 
 
 
