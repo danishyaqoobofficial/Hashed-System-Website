@@ -168,30 +168,38 @@ function portfolioDropdown() {
 // ***************   Animation Script ***************
 
 
-const animateOnScroll = (elementsSelector, animationClass, delay = 0) => {
+const headerAnimation = (elementsSelector, animationClass, delay = 0) => {
     const elements = document.querySelectorAll(elementsSelector);
 
     const handleAnimation = () => {
-        const windowHeight = window.innerHeight;
         elements.forEach((item, index) => {
-            const windowTop = item.getBoundingClientRect().top;
-            if (windowTop + 100 < windowHeight) {
-                item.style.animationDelay = `${delay * index}ms`;
-                item.classList.add(animationClass);
-            }
+            item.style.animationDelay = `${delay * index}ms`;
+            item.classList.add(animationClass);
         });
     };
 
     // Initial animation check
     handleAnimation();
-    // Add scroll event listener
-    window.addEventListener('scroll', handleAnimation);
 };
 
 // Define all your animations with the generic function
-animateOnScroll('.herder__img', 'landing__zoom__out');
-animateOnScroll('.header__main__heading', 'landing__slide__up', 200);
-animateOnScroll('.landing__on__scroll', 'landing__on__scroll');
+headerAnimation('.herder__img', 'landing__zoom__out');
+headerAnimation('.header__main__heading', 'landing__slide__up', 200);
+    
+let animationItems = document.querySelectorAll('.landing__on__scroll')
+        const showAnimationItems = () => {
+            const windowHeight = window.innerHeight;
+
+            animationItems.forEach(item => {
+                const topFromWindow = item.getBoundingClientRect().top;
+                if (topFromWindow < windowHeight) {
+                    item.classList.add('landing__on__scroll__active')
+                }
+            });
+        }
+
+        showAnimationItems();
+        window.addEventListener('scroll', showAnimationItems)
 
 
 // 

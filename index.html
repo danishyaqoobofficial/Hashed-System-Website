@@ -44,7 +44,8 @@
     position: relative;
     top: 100px;
     clip-path: inset(0 0 94% 0) ;
-    opacity: 0.5;
+    opacity: 0;
+    transition: all 1s;
 }
 
 
@@ -94,11 +95,15 @@
         
     /* ***** animation for other elements  ******* */
         
-        .landing__on__scroll{
-            animation: landing__on__scroll 2s forwards ease-in-out;
+        .landing__on__scroll__active{
+            position: relative;
+            top: 0px;
+            clip-path: inset(0 0 0 0);
+            opacity: 1;
+            /* animation: landing__on__scroll 2s forwards ease-in-out; */
         }
 
-        @keyframes landing__on__scroll {
+        /* @keyframes landing__on__scroll {
             0% {
                 position: relative;
                 top: 100px;
@@ -112,7 +117,7 @@
                 clip-path: inset(0 0 0 0);
                 opacity: 1;
             }
-        }
+        } */
 
     </style>
 </head>
