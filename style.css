@@ -94,3 +94,109 @@ body{
 .transition-five-second{
     transition: all 0.5s ease-in-out !important;
 }
+
+
+/* *****************   ANIMATIONS   *************** */
+
+
+
+.header__main__heading{
+    height: 70px;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+.herder__img{
+    transform: scale(1.25) translateX(50%) translateY(10%);
+    filter: brightness(1.3);
+    opacity: 0;
+}
+
+
+.landing__on__scroll{
+    position: relative;
+    top: 100px;
+    clip-path: inset(0 0 94% 0) ;
+    opacity: 0;
+    transition: all 1s;
+}
+
+
+  @keyframes imageAnimation {
+            0% {
+                transform: scale(0.6) rotate(-180deg);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1) rotate(0deg);
+                opacity: 1;
+            }
+        }
+
+        @keyframes textAnimation {
+            0% {
+                opacity: 0;
+                transform: translateX(200px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .animated-element img {
+            animation: imageAnimation 2s;
+        }
+
+        .animated-element h2, .animated-element p {
+            animation: textAnimation 2s;
+        }
+
+/* ***** animation for header text ******* */
+        .landing__slide__up{
+            animation: landing__slide__up 1s forwards;
+        }
+
+        @keyframes landing__slide__up {
+            0% {
+                height: 70px;
+                overflow-x: hidden;
+                padding-top: 80px;
+                opacity: 0;
+                }
+                100% {
+                height: 70px;
+                opacity: 1;
+                overflow: hidden;
+                padding-top: 0;
+            }
+        }
+        
+    /* ***** animation for header img in home page   ******* */
+        
+        .landing__zoom__out{
+            animation: landing__zoom__out 1s forwards ease-in-out;
+        }
+
+        @keyframes landing__zoom__out {
+            0% {
+                transform: scale(1.25) translateX(50%) translateY(10%);
+                filter: brightness(1.3);
+                opacity: 0;
+            }
+                
+            100% {
+                opacity: 1;
+                filter: brightness(1);
+                transform: scale(1) translateX(0%) translateY(0%);
+            }
+        }
+        
+    /* ***** animation for other elements  ******* */
+        
+        .landing__on__scroll__active{
+            position: relative;
+            top: 0px;
+            clip-path: inset(0 0 0 0);
+            opacity: 1;
+        }

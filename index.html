@@ -6,120 +6,25 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="#000000">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <title>Hashed System | Home</title>
-    <meta name="description" content="Web site created using create-react-app">
-    <link rel="apple-touch-icon" href="/logo192.png">
-    <link rel="manifest" href="/manifest.json">
-    <script defer="defer" src="/static/js/main.34b75a15.js"></script>
-    <link href="/static/css/main.fdb7a0e7.css" rel="stylesheet">
+  <title>Hashed System | Home</title>
+  <meta name="description" content="Web site created using create-react-app">
+  <link rel="apple-touch-icon" href="/logo192.png">
+  <link rel="manifest" href="/manifest.json">
+  <script defer="defer" src="/static/js/main.34b75a15.js"></script>
+  <link href="/static/css/main.fdb7a0e7.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 
 
 
 
 
-    <style>
-
-.header__main__heading{
-    height: 70px;
-    overflow: hidden;
-    padding-top: 80px;
-}
-
-.herder__img{
-    transform: scale(1.25) translateX(50%) translateY(10%);
-    filter: brightness(1.3);
-    opacity: 0;
-}
-
-
-.landing__on__scroll{
-    position: relative;
-    top: 100px;
-    clip-path: inset(0 0 94% 0) ;
-    opacity: 0;
-    transition: all 1s;
-}
-
-
-
-
-
-
-/* ***** animation for header text ******* */
-        .landing__slide__up{
-            animation: landing__slide__up 1s forwards;
-        }
-
-        @keyframes landing__slide__up {
-            0% {
-                height: 70px;
-                overflow-x: hidden;
-                padding-top: 80px;
-                opacity: 0;
-                }
-                100% {
-                height: 70px;
-                opacity: 1;
-                overflow: hidden;
-                padding-top: 0;
-            }
-        }
-        
-    /* ***** animation for header img in home page   ******* */
-        
-        .landing__zoom__out{
-            animation: landing__zoom__out 1s forwards ease-in-out;
-        }
-
-        @keyframes landing__zoom__out {
-            0% {
-                transform: scale(1.25) translateX(50%) translateY(10%);
-                filter: brightness(1.3);
-                opacity: 0;
-            }
-                
-            100% {
-                opacity: 1;
-                filter: brightness(1);
-                transform: scale(1) translateX(0%) translateY(0%);
-            }
-        }
-        
-    /* ***** animation for other elements  ******* */
-        
-        .landing__on__scroll__active{
-            position: relative;
-            top: 0px;
-            clip-path: inset(0 0 0 0);
-            opacity: 1;
-            /* animation: landing__on__scroll 2s forwards ease-in-out; */
-        }
-
-        /* @keyframes landing__on__scroll {
-            0% {
-                position: relative;
-                top: 100px;
-                clip-path: inset(0 0 94% 0) ;
-                opacity: 0.5;
-                }
-                
-            100% {
-                position: relative;
-                top: 0px;
-                clip-path: inset(0 0 0 0);
-                opacity: 1;
-            }
-        } */
-
-    </style>
 </head>
 
 <body class="overflow-x-hidden">
@@ -142,7 +47,7 @@
     </div>
     <header class=" bg-[#E8F0FA] w-full ">
         <div class="relative flex items-center max-w-[1200px] mx-auto py-[10px] sm:py-[11px] justify-between px-[15px] sm:px-[20px] ">
-            <a href="/" class="!flex items-center gap-[9px] md:gap-[12px] cursor-pointer ">
+            <a href="/" class="animated-element !flex items-center gap-[9px] md:gap-[12px] cursor-pointer ">
                 <img class="h-[45px] md:h-[56px]" src = '/assets/images/Logo.png' alt="" />
                 <div>
                     <h2 class="text-[#1E4470] text-[18px] md:text-[21px] font-[600] Familjen Grotesk select-none " >Hashed System</h2>
@@ -402,8 +307,8 @@
                 </div>
             </div>
             <div class="px-[42px] py-[8px] ">
-                <h2 class="text-[28px] md:text-[34px] text-[#fff] text-center font-[300]">Locations</h2>
-                <div class="flex items-center gap-[16px] ">
+                <h2 class="text-[28px] md:text-[34px] text-[#fff] text-center font-[300] landing__on__scroll">Locations</h2>
+                <div class="flex items-center gap-[16px] landing__on__scroll">
                     <div class="flex items-center gap-[6px] "><span
                             class="flex items-center justify-center h-[22px] w-[22px] "><svg class="h-full w-full "
                                 viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -527,13 +432,12 @@
                 <h2
                     class="landing__on__scroll text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px] sm:text-start ">
                     Our Valued Clients</h2>
-                <p class="text-[12px] md:text-[13px] mt-[9px] text-center sm:text-start text-[#001436] ">Build
+                <p class="landing__on__scroll text-[12px] md:text-[13px] mt-[9px] text-center sm:text-start text-[#001436] ">Build
                     seamless mobile apps with Flutter. Its layered architecture enables flexible designs and
                     high-speed rendering, allowing us to focus on optimized user experiences. Flutter empowers
                     us to deliver customized front-end and back-end mobile solutions.</p>
             </div>
-            <div class="flex items-center gap-[12px] md:gap-[16px] flex-wrap flex-1 justify-center mt-[15px] sm:mt-[0px] "
-                left"><img class="h-[56px] w-[110px] "
+            <div class="flex items-center gap-[12px] md:gap-[16px] flex-wrap flex-1 justify-center mt-[15px] sm:mt-[0px] landing__on__scroll" ><img class="h-[56px] w-[110px] "
                     src="/assets/images/Clients Images/1.png"
                     alt=""><img class="h-[56px] w-[110px] "
                     src="/assets/images/Clients Images/2.png"
@@ -553,11 +457,11 @@
     <div class="bg-[#E8F0FA] py-[44px] w-full ">
         <div class="max-w-[1200px] mx-auto px-[15px] md:px-[20px] ">
             <h2
-                class=" text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  ">
+                class="landing__on__scroll text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  ">
                 Our Services</h2>
             <div class="space-y-5" id="servicesContainer"></div>
             <div class="flex items-center justify-center mt-[22px]  ">
-                <a href="/services.html" class="flex items-center gap-[14px] bg-[#0D99FF] rounded-[7px] px-[22px] py-[12px] cursor-pointer">
+                <a href="/services.html" class="landing__on__scroll flex items-center gap-[14px] bg-[#0D99FF] rounded-[7px] px-[22px] py-[12px] cursor-pointer">
                     <p class="text-[#fff] text-[15px] font-[500] select-none ">View All Services</p>
                     <div class="bg-[#fff] rounded-[50px] p-[6px] "><svg width="12" height="12" viewBox="0 0 15 14"
                             fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -573,7 +477,7 @@
         <div class="max-w-[1200px] mx-auto">
             <div class=" py-[52px] px-[15px] md:px-[20px] ">
                 <div class="flex items-center justify-center ">
-                    <div class="rounded-[12px] bg-[#E1ECFF] flex items-center gap-[4px] py-[6px] px-[9px] ">
+                    <div class="landing__on__scroll rounded-[12px] bg-[#E1ECFF] flex items-center gap-[4px] py-[6px] px-[9px]  ">
                         <span class="bg-[#0D99FF] rounded-[50px] h-[7px] w-[7px] "></span>
                         <p class="text-[12px] text-[#180F34] ">Portfolio</p>
                     </div>
@@ -582,7 +486,7 @@
                     class="landing__on__scroll text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px] ">
                     We craft a unique solution for every project</h2>
                 <div class="flex items-center flex-wrap mt-[24px] md:mt-[50px] gap-[22px] justify-center ">
-                    <a href="/portfolio.html" class="max-w-[430px] w-full cursor-pointer ">
+                    <a href="/portfolio.html" class="landing__on__scroll max-w-[430px] w-full cursor-pointer ">
                         <div class="  rounded-[12px] w-full pt-[20px] overflow-hidden "
                             style="background-color: rgb(234, 225, 202);"><img class="h-[240px] sm:h-[260px] w-full"
                                 src="assets/images/Projects/N-Style.png" alt=""></div>
@@ -609,7 +513,7 @@
                                 Services</div>
                         </div>
                     </a>
-                    <a href="/portfolio.html" class="max-w-[430px] w-full cursor-pointer ">
+                    <a href="/portfolio.html" class="landing__on__scroll max-w-[430px] w-full cursor-pointer ">
                         <div class="  rounded-[12px] w-full pt-[20px] overflow-hidden "
                             style="background-color: rgb(208, 239, 229);"><img class="h-[240px] sm:h-[260px] w-full"
                                 src="assets/images/Projects/ConciergeBookings.png" alt=""></div>
@@ -637,7 +541,7 @@
                                 Services</div>
                         </div>
                     </a>
-                    <a href="/portfolio.html" class="max-w-[430px] w-full cursor-pointer ">
+                    <a href="/portfolio.html" class="landing__on__scroll max-w-[430px] w-full cursor-pointer ">
                         <div class="  rounded-[12px] w-full pt-[20px] overflow-hidden "
                             style="background-color: rgb(142, 195, 159); padding-left: 20px; padding-right: 20px;">
                             <img class="h-[240px] sm:h-[260px] w-full" src="assets/images/Projects/Endup.png" alt="">
@@ -665,7 +569,7 @@
                                 Services</div>
                         </div>
                     </a>
-                    <a href="/portfolio.html" class="max-w-[430px] w-full cursor-pointer ">
+                    <a href="/portfolio.html" class="landing__on__scroll max-w-[430px] w-full cursor-pointer ">
                         <div class="  rounded-[12px] w-full pt-[20px] overflow-hidden "
                             style="background-color: rgb(177, 209, 243);"><img class="h-[240px] sm:h-[260px] w-full"
                                 src="assets/images/Projects/OneMove.png" alt=""></div>
@@ -693,7 +597,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="flex items-center justify-center mt-[52px]  ">
+                <div class="flex items-center justify-center mt-[52px]  landing__on__scroll">
                     <a href="/portfolio.html"
                         class="flex items-center gap-[14px] bg-[#0D99FF] rounded-[7px] px-[22px] py-[12px] cursor-pointer">
                         <p class="text-[#fff] text-[15px] font-[500] select-none ">Vew All Projects</p>
@@ -708,10 +612,10 @@
             </div>
             <div class="pt-[22px] ">
                 <h2
-                    class=" text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  max-w-[660px] mx-auto ">
+                    class="landing__on__scroll text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  max-w-[660px] mx-auto ">
                     Ainlockingliation</h2>
                 <div
-                    class=" w-full flex items-center py-[22px] gap-[14px] md:gap-[18px] mt-[15px] justify-center px-[15px] sm:px-[20px] ">
+                    class="landing__on__scroll w-full flex items-center py-[22px] gap-[14px] md:gap-[18px] mt-[15px] justify-center px-[15px] sm:px-[20px] ">
                     <div
                         class="swiper ainlockingliation-swiper  w-full swiper-backface-hidden">
                         <div class="swiper-wrapper"
@@ -1135,7 +1039,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" flex items-center justify-center gap-[8px] "><button
+                <div class="landing__on__scroll flex items-center justify-center gap-[8px] "><button
                         class="swiper-button-prev-affiliation flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#fff] rounded-[12px] border border-[#0D99FF]"><svg
                             width="18" height="15" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -1150,7 +1054,7 @@
                         </svg>
                     </button>
                 </div>
-                <div class="flex items-center justify-end"><svg width="400" height="200" viewBox="0 0 431 222"
+                <div class="landing__on__scroll flex items-center justify-end"><svg width="400" height="200" viewBox="0 0 431 222"
                         fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_563_4881)">
                             <path
@@ -1174,14 +1078,14 @@
     <div class="w-full bg-[#E8F0FA] ">
         <div class="max-w-[1200px] mx-auto py-[62px] px-[15px] md:px-[20px] ">
             <h2
-                class="text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  ">
+                class="landing__on__scroll text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  ">
                 Achievements and Success Stories</h2>
-            <p class=" text-[14px] sm:text-[15px] text-[#0A0E19] text-center mt-[12px] ">Our projects showcase
+            <p class="landing__on__scroll text-[14px] sm:text-[15px] text-[#0A0E19] text-center mt-[12px] ">Our projects showcase
                 our dedication to excellence and product delivery, featuring innovative and impactful solutions.
             </p>
             <div class="py-[22px] ">
                 <div
-                    class="flex items-center justify-center gap-[12px] md:gap-[22px] max-w-[900px] mx-auto flex-col mt-[12px] relative z-10  md:flex-row">
+                    class="landing__on__scroll flex items-center justify-center gap-[12px] md:gap-[22px] max-w-[900px] mx-auto flex-col mt-[12px] relative z-10  md:flex-row">
                     <div class="mt-[22px] rounded-[12px] pt-[20px] overflow-hidden max-w-[420px] w-full " right"
                         style="background-color: rgb(234, 225, 202);"><img class="h-[240px] sm:h-[255px]"
                             src="assets/images/Achievements/N Style.png" alt=""></div>
@@ -1207,7 +1111,7 @@
                     </div>
                 </div>
                 <div
-                    class="flex items-center justify-center gap-[12px] md:gap-[22px] max-w-[900px] mx-auto flex-col mt-[12px] relative z-10  md:flex-row-reverse">
+                    class="landing__on__scroll flex items-center justify-center gap-[12px] md:gap-[22px] max-w-[900px] mx-auto flex-col mt-[12px] relative z-10  md:flex-row-reverse">
                     <div class="mt-[22px] rounded-[12px] pt-[20px] overflow-hidden max-w-[420px] w-full " left"
                         style="background-color: rgb(208, 239, 229);"><img class="h-[240px] sm:h-[255px]"
                             src="assets/images/Achievements/Concierge Bookings.png" alt=""></div>
@@ -1233,7 +1137,7 @@
                     </div>
                 </div>
                 <div
-                    class="flex items-center justify-center gap-[12px] md:gap-[22px] max-w-[900px] mx-auto flex-col mt-[12px] relative z-10  md:flex-row">
+                    class="landing__on__scroll flex items-center justify-center gap-[12px] md:gap-[22px] max-w-[900px] mx-auto flex-col mt-[12px] relative z-10  md:flex-row">
                     <div class="mt-[22px] rounded-[12px] pt-[20px] overflow-hidden max-w-[420px] w-full " right"
                         style="background-color: rgb(177, 209, 243);"><img class="h-[240px] sm:h-[255px]"
                             src="assets/images/Achievements/OneMove.png" alt=""></div>
@@ -1259,7 +1163,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex items-center justify-center mt-[52px]  ">
+            <div class="landing__on__scroll flex items-center justify-center mt-[52px]  ">
                 <div class="flex items-center gap-[14px] bg-[#0D99FF] rounded-[7px] px-[22px] py-[12px] cursor-pointer">
                     <p class="text-[#fff] text-[15px] font-[500] select-none ">Explore Projects</p>
                     <div class="bg-[#fff] rounded-[50px] p-[6px] "><svg width="12" height="12" viewBox="0 0 15 14"
@@ -1275,9 +1179,9 @@
     <div class="w-full bg-[#fff]  ">
         <div class="max-w-[1200px] mx-auto py-[32px] px-[15px] md:px-[20px] ">
             <h2
-                class="text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px] ">
+                class="landing__on__scroll text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px] ">
                 Unlocking Business Potential Through Our Expertise</h2>
-            <div class=" w-full flex items-center overflow-auto py-[22px] gap-[12px] mt-[15px]">
+            <div class="landing__on__scroll w-full flex items-center overflow-auto py-[22px] gap-[12px] mt-[15px]">
                 <div class="swiper business-expertise  w-full">
                     <div class="swiper-wrapper"
                         style="transition-duration: 0ms; transform: translate3d(-511.875px, 0px, 0px); transition-delay: 0ms;">
@@ -1549,12 +1453,12 @@
                 </div>
             </div>
             <div class="flex items-center justify-center gap-[22px] mt-[22px] flex-col md:flex-row">
-                <div class="flex-1 w-full bg-cover bg-no-repeat bg-center h-[340px] rounded-[20px] " src="" alt=""
+                <div class="landing__on__scroll flex-1 w-full bg-cover bg-no-repeat bg-center h-[340px] rounded-[20px] " 
                     style="background-image: url('assets/images/Data Analytics.png');">
                 </div>
                 <div class="flex-1 w-full ">
-                    <h2 class="text-[22px] text-[#001436] font-[600] ">Data Analytics</h2>
-                    <p class="text-[12px] text-[#001436] mt-[6px] line-clamp-4 ">Lorem Ipsum&nbsp;is simply
+                    <h2 class="landing__on__scroll text-[22px] text-[#001436] font-[600] ">Data Analytics</h2>
+                    <p class="landing__on__scroll text-[12px] text-[#001436] mt-[6px] line-clamp-4 ">Lorem Ipsum&nbsp;is simply
                         dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                         standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                         and scrambled it to make a type specimen book. It has survived not only five centuries,
@@ -1566,11 +1470,11 @@
             </div>
             <div
                 class="mt-[70px] rounded-[20px] bg-[#0D99FF] px-[30px] md:px-[50px] py-[32px] md:py-[42px] flex justify-between gap-[18px] md:gap-[22px] items-center sm:flex-row flex-col ">
-                <h2 class="text-[24px] md:text-[35px] text-[#fff] font-[600] sm:text-start text-center line-clamp-2 ">
+                <h2 class="landing__on__scroll text-[24px] md:text-[35px] text-[#fff] font-[600] sm:text-start text-center line-clamp-2 ">
                     Ready to empower your product vision with us?</h2>
                 <div
                     class="flex items-center gap-[14px] bg-[#FFFFFF] rounded-[7px] px-[22px] py-[12px] cursor-pointer max-w-max">
-                    <p class="text-[#0D99FF] text-[15px] font-[500] select-none whitespace-nowrap ">Get Quotes
+                    <p class="landing__on__scroll text-[#0D99FF] text-[15px] font-[500] select-none whitespace-nowrap ">Get Quotes
                     </p>
                     <div class="bg-[#0D99FF] rounded-[50px] p-[6px] "><svg width="15" height="14" viewBox="0 0 15 14"
                             fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1581,9 +1485,9 @@
                 </div>
             </div>
             <h2
-                class="text-center text-[#0A0E19] font-[600] mt-[50px] md:mt-[110px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  ">
+                class="landing__on__scroll text-center text-[#0A0E19] font-[600] mt-[50px] md:mt-[110px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  ">
                 Technology</h2>
-            <div class=" w-full flex items-center overflow-auto py-[22px] gap-[12px] mt-[15px]">
+            <div class="landing__on__scroll w-full flex items-center overflow-auto py-[22px] gap-[12px] mt-[15px]">
                 <div class="swiper business-expertise  w-full">
                     <div class="swiper-wrapper"
                         style="transition-duration: 0ms; transform: translate3d(-511.875px, 0px, 0px); transition-delay: 0ms;">
@@ -1854,7 +1758,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper clients-slider h-fit w-full">
+            <div class="landing__on__scroll swiper clients-slider h-fit w-full">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="mt-[22px] flex items-center justify-center flex-wrap gap-[12px] "><img
@@ -1924,7 +1828,7 @@
                     </div>
             </div>
         </div>
-        <div class=" flex items-center justify-center gap-[8px] mt-[32px] "><button
+        <div class="landing__on__scroll flex items-center justify-center gap-[8px] mt-[32px] "><button
                 class="swiper-button-next-Awards flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#fff] rounded-[12px] border border-[#0D99FF] "><svg
                     width="18" height="15" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -1939,9 +1843,9 @@
                 </svg></button></div>
         <div class="max-w-[1200px] mx-auto mt-[50px] md:mt-[110px] ">
             <h2
-                class="text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  ">
+                class="landing__on__scroll text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  ">
                 Awards & Recognitions</h2>
-            <div class="flex items-center justify-center gap-[18px] mt-[30px] flex-wrap ">
+            <div class="landing__on__scroll flex items-center justify-center gap-[18px] mt-[30px] flex-wrap ">
                 <div class="swiper awards-slider  w-full">
                     <div class="swiper-wrapper"
                         style="transition-duration: 0ms; transform: translate3d(-804.375px, 0px, 0px); transition-delay: 0ms;">
@@ -1992,16 +1896,16 @@
     </div>
     <div class="w-full bg-[#E8F0FA] ">
         <div class="max-w-[1200px] mx-auto py-[52px] px-[15px] sm:px-[20px] ">
-            <div class="flex items-center justify-center ">
+            <div class="landing__on__scroll flex items-center justify-center ">
                 <div class="rounded-[12px] bg-[#E1ECFF] flex items-center gap-[4px] py-[5px] px-[12px] "><span
                         class="bg-[#0D99FF] rounded-[50px] h-[7px] w-[7px] "></span>
                     <p class="text-[12px] text-[#180F34] ">Blog</p>
                 </div>
             </div>
             <h2
-                class="text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  ">
+                class="landing__on__scroll text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  ">
                 We aim to ensure that knowledge and news are readily accessible to all</h2>
-            <div class="flex items-center lg:items-start mt-[22px] gap-[22px] justify-center">
+            <div class="landing__on__scroll flex items-center lg:items-start mt-[22px] gap-[22px] justify-center">
                 <div class="swiper blog-slider swiper-initialized swiper-horizontal mySwiper w-full swiper-backface-hidden">
                     <div class="swiper-wrapper"
                         style="transition-duration: 0ms; transform: translate3d(-1210px, 0px, 0px); transition-delay: 0ms;">
@@ -2120,7 +2024,7 @@
                     </div>
                 </div>
             </div>
-            <div class=" flex items-center justify-center gap-[8px] mt-[32px] "><button
+            <div class="landing__on__scroll flex items-center justify-center gap-[8px] mt-[32px] "><button
                     class="swiper-button-prev-blog flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#fff] rounded-[12px] border border-[#0D99FF]"><svg
                         width="18" height="15" viewBox="0 0 21 16" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -2140,41 +2044,41 @@
     <div class="w-full bg-[#fff] ">
         <div class="max-w-[1200px] mx-auto py-[50px] px-[15px] md:px-[20px] ">
             <h2
-                class=" text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  max-w-[660px] mx-auto ">
+                class="landing__on__scroll text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  max-w-[660px] mx-auto ">
                 Have a project? Let's discuss</h2>
-            <p class=" text-[14px] sm:text-[15px] text-[#0A0E19] text-center mt-[16px] ">Once you submit this
+            <p class="landing__on__scroll text-[14px] sm:text-[15px] text-[#0A0E19] text-center mt-[16px] ">Once you submit this
                 form, expect to hear back from us within 24 hours.</p>
             <div class="flex items-center gap-[12px] mt-[26px] flex-col lg:flex-row ">
                 <div class="flex items-center gap-[12px] w-full flex-col sm:flex-row ">
-                    <div class="flex-1 w-full "><label class="text-[#0A0E19] text-[15px] font-[300] whitespace-nowrap "
+                    <div class="landing__on__scroll flex-1 w-full "><label class="text-[#0A0E19] text-[15px] font-[300] whitespace-nowrap "
                             for="Your Name">Your Name *</label><input
                             class="w-full border-[1px] rounded-[5px] outline-none text-[#1E2549] text-[14px] p-[11px] border-[#CECDD1] mt-[3px] "
                             type="text" placeholder="Your Name" id="Your Name"></div>
-                    <div class="flex-1 w-full ">
+                    <div class="landing__on__scroll flex-1 w-full ">
                         <label class="text-[#0A0E19] text-[15px] font-[300] whitespace-nowrap "
                             for="Your Phone">Your Phone *</label><input
                             class="w-full border-[1px] rounded-[5px] outline-none text-[#1E2549] text-[14px] p-[11px] border-[#CECDD1] mt-[3px] "
                             type="text" placeholder="Your Phone" id="Your Phone"></div>
                 </div>
                 <div class="flex items-center gap-[12px] w-full flex-col sm:flex-row ">
-                    <div class="flex-1 w-full "><label class="text-[#0A0E19] text-[15px] font-[300] whitespace-nowrap "
+                    <div class="landing__on__scroll flex-1 w-full "><label class="text-[#0A0E19] text-[15px] font-[300] whitespace-nowrap "
                             for="Company">Company *</label><input
                             class="w-full border-[1px] rounded-[5px] outline-none text-[#1E2549] text-[14px] p-[11px] border-[#CECDD1] mt-[3px] "
                             type="text" placeholder="Company" id="Company"></div>
-                    <div class="flex-1 w-full "><label class="text-[#0A0E19] text-[15px] font-[300] whitespace-nowrap "
+                    <div class="landing__on__scroll flex-1 w-full "><label class="text-[#0A0E19] text-[15px] font-[300] whitespace-nowrap "
                             for="Email">Email
                             *</label><input
                             class="w-full border-[1px] rounded-[5px] outline-none text-[#1E2549] text-[14px] p-[11px] border-[#CECDD1] mt-[3px] "
                             type="email" placeholder="Email" id="Email"></div>
                 </div>
             </div>
-            <div class="w-full mt-[26px] ">
+            <div class="landing__on__scroll w-full mt-[26px] ">
                 <div class="flex-1 "><label class="text-[#0A0E19] text-[15px] font-[300] whitespace-nowrap"
                         for="textarea">Your Message *</label><textarea
                         class=" resize-none w-full border-[1px] rounded-[5px] outline-none text-[#1E2549] text-[14px] p-[11px] border-[#CECDD1] mt-[3px] "
                         name="" id="textarea" cols="30" rows="10" placeholder="Your Message"></textarea></div>
             </div>
-            <div class="flex items-center justify-center mt-[52px]  ">
+            <div class="landing__on__scroll flex items-center justify-center mt-[52px]  ">
                 <div class="flex items-center gap-[14px] bg-[#0D99FF] rounded-[7px] px-[22px] py-[12px] cursor-pointer" onclick="FormSubmit()" >
                     <p class="text-[#fff] text-[15px] font-[500] select-none ">Submit</p>
                     <div class="bg-[#fff] rounded-[50px] p-[6px] "><svg width="12" height="12" viewBox="0 0 15 14"
@@ -2199,7 +2103,7 @@
             </div>
         </div>
     </div>
-    <footer class="w-full bg-[#11335A]  ">
+    <footer class="w-full bg-[#11335A] landing__on__scroll ">
         <main class="max-w-[1200px] mx-auto ">
             <div class="py-[42px] px-[15px] sm:px-[20px] ">
                 <div class="flex items-center justify-between "><img class="h-[50px] cursor-pointer "
